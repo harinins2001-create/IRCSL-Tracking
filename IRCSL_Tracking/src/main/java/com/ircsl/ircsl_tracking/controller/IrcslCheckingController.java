@@ -7,9 +7,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
+
 @RestController
 @RequestMapping("/api/ircsl")
-@CrossOrigin(origins = "http://localhost:3000") // Next.js port එකට අවසර දීම
+@CrossOrigin(origins = "*", allowedHeaders = "*") // Next.js port එකට අවසර දීම
 public class IrcslCheckingController {
 
     private final IrcslCheckingService service;
