@@ -62,7 +62,7 @@ public class IrcslCheckingService {
         if (record.getDueDate() != null && record.getDueDate().isEqual(today)) {
             try {
                 SimpleMailMessage message = new SimpleMailMessage();
-                message.setTo("harini.s@arpicoinsurance.com");
+                message.setTo("harinins2001@gmail.com");
                 message.setSubject("⚠️ IRCSL Due Date Alert (Today)!");
 
                 String body = "The following IRCSL record is due today:\n\n" +
